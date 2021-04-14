@@ -15,15 +15,27 @@
 .container {
   width: 90vw;
   margin: 0 auto;
+  padding-top: 40px;
 }
 
 .nav {
   padding: 10px 40px;
   background-color: lightgrey;
   justify-content: space-between;
-  margin-bottom: 40px;
 }
 
 .flex {
   display: flex;
+}
+
+.flat-card-image {
+  height: 180px;
+  background-position: center;
+  background-size: cover;
+}
+
+.map {
+  height: 350px;
+  background-position: center;
+  background-size: cover;
 }
