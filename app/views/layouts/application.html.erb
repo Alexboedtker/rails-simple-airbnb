@@ -10,6 +10,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><%= link_to 'Flats', flats_path %></li>
+      </ul>
+    </nav>
+      <%= yield %>
   </body>
 </html>

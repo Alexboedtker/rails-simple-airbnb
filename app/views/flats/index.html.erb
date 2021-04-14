@@ -1,0 +1,38 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-12">
+      <h1>All our Flats</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>All 4 flats</p>
+    </div>
+  </div>
+  <div class="row">
+    <%= @flats.each do |flat| %>
+      <div class="col-3">
+        <div class="flat-card">
+          <div class="flat-card-image" style="background-image: url('https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200')"></div>
+          <div class="flat-card-content">
+            <div class="flat-card-title">
+              <h4> <%= flat.name %> </h4>
+            </div>
+            <p><%= flat.address %></p>
+            <div class="flex">
+              <div class="flex">
+                <i class="fas fa-user-friends"></i>
+                <span><%= flat.number_of_guests %></span>
+              </div>
+              <div class="flex ml-3">
+                <i class="fas fa-coins"></i>
+                <span><%= flat.price_per_night %></span>
+              </div>
+            </div>
+          </div>
+          <div class="flat-card-actions"></div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
